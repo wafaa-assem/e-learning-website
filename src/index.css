@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* تصميم لمكون كامل يكون واضح الشكل والخصائص وبيتكرر بنفس الطريقة في صفحات مختلفة. */
+@layer components {
+  .primary-btn {
+    @apply px-6 py-2 bg-primary hover:bg-secondary duration-300 rounded-lg text-white font-semibold shadow-[0_10px_10px_-7px_#ffd978] hover:shadow-[0px_10px_10px_-7px_#69a79c];
+  }
+}
+
+/* كلاس لوظيفة بسيطة (زي ظل للنصوص، تعديلات على الألوان أو الأحجام). */
+/* shadow for image  => simple class*/
+@layer utilities {
+  .drop-shadow{
+    filter:drop-shadow(6px 8px 10px rgba(0 , 0 , 0 , 0.5));
+  }
+}
